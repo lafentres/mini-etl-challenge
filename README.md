@@ -27,9 +27,9 @@ You can run this program two ways:
   1. Provide a file of lines, each separate by a newline, 
   where each line is in the format 
   `<ITEM NAME>,<ITEM ID>,<ITEM'S PARENT ID>`
-  ```
-  ruby mini_etl.rb sample_input_space.rb
-  ```
+     ```
+     ruby mini_etl.rb sample_input_space.rb
+     ```
 
   OR
 
@@ -38,25 +38,20 @@ You can run this program two ways:
   `<ITEM NAME>,<ITEM ID>,<ITEM'S PARENT ID>`. 
   When you are done entering lines, send the EOF signal, 
   CTRL+D.
-    ```
-  ruby mini_etl.rb
-  feelings,98473,nil
-  ...
-  sad,what-a-strange-id,98473
-  ^D
-  ```
+     ```
+     ruby mini_etl.rb
+     feelings,98473,nil
+     ...
+     sad,what-a-strange-id,98473
+     ^D
+     ```
 
   ## Things left to improve
 
-  I followed the guidelines and only spent two hours on this, 
-  so that means I ran out of time to write tests and 
-  double-check the efficiency of my solution. 
-
-  Here are a few things I would research and improve with more time:
-    - [ ] Add tests, in particular for edge cases, larger inputs, etc
-    - [ ] Double-check that the process used is the most efficient
-    - [ ] Refactor to get rid of global variable
-    - [ ] Add a helpful prompt for users providing input through
+   - [ ] Add tests, in particular for edge cases, larger inputs, etc
+   - [ ] Double-check that the process used is the most efficient
+   - [ ] Refactor to get rid of global variable
+   - [ ] Add a helpful prompt for users providing input through
   the console
-    - [ ] Add more checks and error handling around file reading
-    - [ ] Add a help/usage command
+   - [ ] Add more checks and error handling around file reading
+   - [ ] Add a help/usage command
